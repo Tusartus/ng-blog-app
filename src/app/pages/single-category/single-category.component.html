@@ -1,0 +1,19 @@
+<div class="bg-theme p-5 mb-3">
+    <div class="container">
+        <h1 class="text-white"> {{ categoryObj.category }}</h1>
+        <hr class="bg-light">
+        <p class="text-white">{{ categoryObj.category }} </p>
+    </div>
+    
+</div>
+
+<div class="container">
+   <div class="row">
+     
+       <div class="col-md-4 mb-3" *ngFor="let post of postsArray">
+        <app-post-card [postData] = "post" ></app-post-card>
+    </div>
+
+   </div>
+
+</div>

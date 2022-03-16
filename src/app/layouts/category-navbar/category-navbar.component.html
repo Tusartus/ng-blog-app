@@ -1,0 +1,29 @@
+<nav class=" navbar navbar-expand-md fixed-top">
+
+    <div class="container">
+          
+        <aside class="row">
+            <div class="collapse navbar-collapse col-sm-12">
+                <ul class="navbar-nav">
+                    <a routerLink = "/" class="site-logo"> Angular BLOG </a>
+                </ul>
+               
+            </div>
+        </aside>
+        <aside class="row">
+            <div class="collapse navbar-collapse col-sm-12">
+        
+                <ul class="navbar-nav" *ngFor = "let category of categoryArray">
+                    <li class="nav-item ml-3">
+                        
+                        <a class="nav-link"  [routerLink] = "['/category',category.data.category, category.id]">
+                            {{ category.data.category }}
+                        </a></li>
+                
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+</nav>
+

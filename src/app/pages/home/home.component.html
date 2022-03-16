@@ -1,0 +1,43 @@
+<section class="featured-section">
+     <div class="container-fluid">
+           <div class="row">
+               <div class="col-md-12 col-sm-12 text-center mt-5">
+                   <h2 class="text-info">Featured Posts </h2>
+                    <hr class="bg-light">
+                    <h6 class="text-white">  <small>Featured Posts</small> </h6>
+                    <hr class="bg-light">
+                  
+
+               </div>
+           </div>
+           <div class="row">
+               
+
+                <div class="col-md-4 col-sm-4" *ngFor = "let featuredPost of featuredPostsArray">
+                    <app-post-card [postData] = "featuredPost" ></app-post-card>
+                </div>
+               
+
+
+           </div>
+           
+     </div>
+</section>
+
+
+<section class="container mt-5">
+     <div class="col-md-12 col-sm-12 text-center">
+         <h2>Latest Posts</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nostrum recusandae blanditiis.</p>
+     </div>
+
+     <div class="row">
+        
+         <div class="col-md-4 mt-3 mb-3" *ngFor = "let latestPost of latestPostsArray" >
+            <app-post-card [postData] = "latestPost" ></app-post-card>
+        </div>
+
+
+     </div>
+</section>
+

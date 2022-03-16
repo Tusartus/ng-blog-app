@@ -1,0 +1,42 @@
+.card{
+    background-color: var(--secondary-color);
+    width:1200px;
+}
+
+input[type = text], input[type = email] {
+    height: 40px;
+    padding-left: 10px;
+    font-size: 13px;
+    width: 100%;
+}
+
+.btn-sub{
+
+    height: 48px;
+    border: none;
+    font-size: 13px;
+    background-color: var(--primary-color);
+
+}
+
+.subs-text{
+    width: 500px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+   .subs-text{
+       padding:12px;
+   }
+    
+   .card{
+    background-color: var(--secondary-color);
+    width:400px;
+}
+   
+}
+
+
+

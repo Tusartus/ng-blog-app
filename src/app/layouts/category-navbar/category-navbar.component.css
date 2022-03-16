@@ -1,0 +1,43 @@
+nav {
+    margin-top: 100px;
+    height: 50px;
+    background-color: var(--navbar-footer-color);
+}
+
+.nav-link{
+    text-transform: uppercase;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .subs-text{
+        padding:12px;
+    }
+     
+
+    nav {
+        margin-top: 100px;
+        height: 50px;
+        background-color: var(--navbar-footer-color);
+        color:black;
+
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+    }
+
+    nav.container{
+        width: 50%;
+    }
+    
+    .nav-link{
+        text-transform: uppercase;
+    }
+
+
+    
+ }
+ 
